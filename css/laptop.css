@@ -1,0 +1,292 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Xay dung Banner */
+
+#banner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+}
+#banner img {
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+}
+.text-banner {
+  position: absolute;
+  text-align: center;
+  display: block;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.text-banner h1 {
+  font-size: auto;
+}
+.text-banner span {
+  font-size: auto;
+  color: #adb5bd;
+}
+
+/* xay dung navbar */
+#nav-bar {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a,
+a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#nav-bar .icon {
+  color: #199cdb;
+}
+.row .col-md {
+  position: relative;
+}
+.navbar-item {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+  border-right: solid 1px #dcdcdd;
+  border-left: solid 1px #dcdcdd;
+}
+#nav-bar img {
+  border: 6px solid #fff;
+  position: absolute;
+  width: 60%;
+  top: -50px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+/* Xay dung thong tin ca nhan*/
+#target {
+  background-color: #f1f3f5;
+}
+#personal-info .icon {
+  color: #199cdb;
+}
+.social {
+  padding-left: 0;
+}
+.social i {
+  color: blue;
+}
+
+/* Xay dung thong tin nghe nghiep */
+.information {
+  border: 1px solid rgb(188, 188, 188);
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 50px auto;
+  padding: 30px 20px;
+  height: 100%;
+  position: relative;
+}
+
+.information h3 {
+  font-size: 30px;
+  font-weight: 500;
+  align-self: end;
+}
+
+.information i {
+  font-size: 40px;
+  color: #adb5bd;
+  align-self: end;
+  justify-self: center;
+}
+
+.information .info-list {
+  grid-column: 1/3;
+}
+
+.information .item {
+  font-size: 14px;
+  padding-top: 30px;
+  padding-left: 22px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.information .title {
+  color: #080c0f;
+  font-weight: 550;
+  position: relative;
+}
+
+.information .title:after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #199cdb;
+  top: 8px;
+  left: -24px;
+  border-radius: 50%;
+}
+
+.date {
+  background-color: #199cdb;
+  padding: 2px 12px;
+  border-radius: 10px;
+  color: #a5d8ff;
+  font-size: 12px;
+}
+
+/* Nut viewmore */
+
+.btnView {
+  display: none;
+}
+.information:hover .btnView {
+  position: absolute;
+  left: 20px;
+  top: 75px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  width: 100px;
+  background-color: #fff3b9;
+  color: rgb(3, 3, 3);
+  display: block;
+}
+
+/* Layout ky nang va ngon ngu */
+.skill-item span,
+.language-item span {
+  background: #a9b4b9;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.level {
+  font-size: 8px;
+}
+
+.level .blue-line {
+  background: #199cdb;
+}
+/* Layout so thich */
+.hobby {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 35px;
+}
+.hobby-item {
+  font-size: 14px;
+  align-items: center;
+}
+
+.hobby-item i {
+  color: #199cdb;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Xay dung phan chung chi giai thuong */
+.certificate-item {
+  display: flex;
+  gap: 25px;
+  padding: 40px 0px;
+  color: #495057;
+  font-size: 13px;
+  border-bottom: 1px solid #d6c08d;
+}
+.item2 {
+  position: relative;
+  border-left: 1px solid #d6c08d;
+}
+.item3 {
+  border-bottom: none !important;
+}
+/* Xay dung phan du an */
+.card-description {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 14px;
+}
+
+.project-name,
+.card-description {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.project-time {
+  padding: 4px 10px;
+  background-color: #199cdb;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 12px;
+}
+.project-description i {
+  color: #868e96;
+}
+th {
+  width: 25%;
+  font-weight: 300;
+}
+
+/* Xay dung phan footer */
+.contact {
+  display: flex;
+  list-style: none;
+  height: 118px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact li {
+  font-size: 14px;
+  color: #868e96;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.contact i {
+  font-size: 250%;
+  color: #199cdb;
+}
+
+.contact a {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* An thong tin */
+.hidden {
+  display: none;
+}
